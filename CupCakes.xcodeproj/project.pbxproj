@@ -17,6 +17,7 @@
 		2E0711B22AB2975600EC0EA9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0711B12AB2975600EC0EA9 /* FirebaseFirestoreSwift */; };
 		2E0711B42AB2975600EC0EA9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0711B32AB2975600EC0EA9 /* FirebaseStorage */; };
 		2E0711B62AB2975600EC0EA9 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 2E0711B52AB2975600EC0EA9 /* FirebaseStorageCombine-Community */; };
+		2E0711B92AB297BF00EC0EA9 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E0711B82AB297BF00EC0EA9 /* AuthViewModel.swift */; };
 		2EA4E4B62AB2956000E0ED38 /* CupCakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B52AB2956000E0ED38 /* CupCakesApp.swift */; };
 		2EA4E4B82AB2956000E0ED38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B72AB2956000E0ED38 /* ContentView.swift */; };
 		2EA4E4BA2AB2956100E0ED38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B92AB2956100E0ED38 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 
 /* Begin PBXFileReference section */
 		2E0711A12AB2965500EC0EA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2E0711B82AB297BF00EC0EA9 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
 		2EA4E4B22AB2956000E0ED38 /* CupCakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupCakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA4E4B52AB2956000E0ED38 /* CupCakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupCakesApp.swift; sourceTree = "<group>"; };
 		2EA4E4B72AB2956000E0ED38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0711B72AB2979A00EC0EA9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2E0711B82AB297BF00EC0EA9 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		2EA4E4A92AB2956000E0ED38 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 		2EA4E4B42AB2956000E0ED38 /* CupCakes */ = {
 			isa = PBXGroup;
 			children = (
+				2E0711B72AB2979A00EC0EA9 /* ViewModels */,
 				2E0711A12AB2965500EC0EA9 /* GoogleService-Info.plist */,
 				2EA4E4B52AB2956000E0ED38 /* CupCakesApp.swift */,
 				2EA4E4B72AB2956000E0ED38 /* ContentView.swift */,
@@ -175,6 +186,7 @@
 			files = (
 				2EA4E4B82AB2956000E0ED38 /* ContentView.swift in Sources */,
 				2EA4E4B62AB2956000E0ED38 /* CupCakesApp.swift in Sources */,
+				2E0711B92AB297BF00EC0EA9 /* AuthViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
