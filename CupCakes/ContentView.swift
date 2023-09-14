@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authViewModel: AuthViewModel
+    var hasdSignedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            NavigationStack {
+                if authViewModel.state == .logout && !hasdSignedIn {
+                    LoginView()
+                } else {
+                    // call home
+                }
+            }
         }
         .padding()
     }
