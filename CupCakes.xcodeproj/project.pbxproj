@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0711A22AB2965500EC0EA9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0711A12AB2965500EC0EA9 /* GoogleService-Info.plist */; };
 		2EA4E4B62AB2956000E0ED38 /* CupCakesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B52AB2956000E0ED38 /* CupCakesApp.swift */; };
 		2EA4E4B82AB2956000E0ED38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B72AB2956000E0ED38 /* ContentView.swift */; };
 		2EA4E4BA2AB2956100E0ED38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B92AB2956100E0ED38 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E0711A12AB2965500EC0EA9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2EA4E4B22AB2956000E0ED38 /* CupCakes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CupCakes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA4E4B52AB2956000E0ED38 /* CupCakesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupCakesApp.swift; sourceTree = "<group>"; };
 		2EA4E4B72AB2956000E0ED38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 		2EA4E4B42AB2956000E0ED38 /* CupCakes */ = {
 			isa = PBXGroup;
 			children = (
+				2E0711A12AB2965500EC0EA9 /* GoogleService-Info.plist */,
 				2EA4E4B52AB2956000E0ED38 /* CupCakesApp.swift */,
 				2EA4E4B72AB2956000E0ED38 /* ContentView.swift */,
 				2EA4E4B92AB2956100E0ED38 /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA4E4BD2AB2956100E0ED38 /* Preview Assets.xcassets in Resources */,
+				2E0711A22AB2965500EC0EA9 /* GoogleService-Info.plist in Resources */,
 				2EA4E4BA2AB2956100E0ED38 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
