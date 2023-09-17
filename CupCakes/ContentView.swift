@@ -17,7 +17,7 @@ struct ContentView: View {
                 if authViewModel.state == .logout && !hasdSignedIn {
                     LoginView()
                 } else {
-                    // call home
+                    HomeView()
                 }
             }
         }

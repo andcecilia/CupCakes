@@ -55,7 +55,7 @@ struct LoginView: View {
         .navigationBarBackButtonHidden(true)
         .navigationDestination(for: Bool.self) { isAuth in
             if isAuth {
-                // call home
+                HomeView()
             }
         }
         
