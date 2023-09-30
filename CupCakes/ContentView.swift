@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var authViewModel: AuthViewModel
+    @EnvironmentObject var shoppingCart: ShoppingCart
+    
     var hasdSignedIn = UserDefaults.standard.bool(forKey: "isLoggedIn")
     
     var body: some View {
@@ -25,8 +27,3 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

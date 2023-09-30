@@ -6,33 +6,100 @@
 //
 
 import SwiftUI
+import FirebaseFirestore
 
 let testData = [
-    Cupcake(name: "Banana", price: 9.90),
-    Cupcake(name: "Limão", price: 9.90),
-    Cupcake(name: "Chocolate", price: 12.90),
+    Cupcake(name: "Banana",
+            price: 10,
+            quantity: 10,
+            image: "banana",
+           description: "Banana diretamente colhida de Joinville"),
+    Cupcake(name: "Limão",
+            price: 10,
+            quantity: 20,
+            image: "lemon",
+           description: "Limão Siciliano"),
+    Cupcake(name: "Chocolate",
+            price: 12,
+            quantity: 5,
+            image: "chocolat",
+            description: "Chocolate Belga")
 ]
 
+//Firestore.firestore().collection("cupcakes").addSnapshotListener { (querySnapshot, error) in
+//    guard let documents = querySnapshot?.documents else {
+//        print("No documents")
+//        return
+//    }
+//
+//    documents.map { queryDocumentSnapshot -> Cupcake in
+//        // map document to Book instance here
+//    }
+//}
+    
 struct HomeView: View {
       var cupcakes = testData
-      
+    @State private var cupcakeQuantity = 0
+    @State private var cupcakeItem: Cupcake?
+    @EnvironmentObject var shoppingCart: ShoppingCart
+
+      // cupcakeQuantity != cupcake.quantity
       var body: some View {
         NavigationView {
-          List(cupcakes) { cupcake in
-            VStack(alignment: .leading) {
-                Text(cupcake.name)
-                .font(.headline)
-                Text("\(cupcake.price, specifier: "%.2f")")
-                .font(.subheadline)
+            Form {
+                ForEach(cupcakes) { cupcake in
+                    VStack {
+                        NavigationLink {
+                            CupcakeDetailsView(cupcakeImage: cupcake.image,
+                                               cupcakeName: cupcake.name,
+                                               description: cupcake.description,
+                                               price: cupcake.price,
+                                               cupcakeQuantity: cupcake.quantity,
+                                               cupcake: cupcakeItem ?? Cupcake(
+                                               name: "Chocolate",
+                                               price: 12,
+                                               quantity: 5,
+                                               image: "chocolat",
+                                               description: "Chocolate Belga"))
+                        } label: {
+                            Text(cupcake.name)
+                        }
+//                        Stepper("\(cupcake.name)",
+//                                value: $cupcakeQuantity,
+//                                in: 0...cupcake.quantity)
+//                        Text("Total: \(cupcakeQuantity) itens")
+                    }
+                }
+                
             }
-          }
-          .navigationBarTitle("Cupcakes")
+          
         }
+        .navigationBarTitle("Cupcakes")
+        .navigationBarItems(trailing:
+                                NavigationLink(destination: ShoppingCartView()) {
+            Image(systemName: "cart")
+        })
+//          Button {
+//              withAnimation {
+//                  //var action: () -> Void
+//                  //TODO: Chamar tela de carrinho de compras
+//              }
+//          } label: {
+//              VStack {
+//                  Image(systemName: "bag")
+//                      .resizable()
+//                      .scaledToFit()
+//                      .frame(width: 20)
+//                      .padding()
+//                      .background(.black)
+//                      .foregroundColor(.white)
+//                      .fontWeight(.bold)
+//                      .mask(Circle())
+//                  Text("Add to Cart")
+////                      .font(.custom(AppFont.regularFont, size: 10))
+////                      .foregroundColor(RCValues.shared
+////                          .color(forKey: .primary))
+//              }
+//          }
+      }
     }
-}
-
-struct HomeView_Previews: PreviewProvider {
-    static var previews: some View {
-        HomeView()
-    }
-}

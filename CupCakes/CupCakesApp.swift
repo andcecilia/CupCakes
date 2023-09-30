@@ -10,16 +10,19 @@ import Firebase
 
 @main
 struct CupCakesApp: App {
-    @StateObject var authViewModel = AuthViewModel()
     
     init() {
         FirebaseApp.configure()
     }
     
+    @StateObject var authViewModel = AuthViewModel()
+    @StateObject var shoppingCart = ShoppingCart()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(authViewModel)
+                .environmentObject(shoppingCart)
         }
     }
 }

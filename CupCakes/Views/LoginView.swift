@@ -17,6 +17,7 @@ struct LoginView: View {
     @FocusState private var passwordIsFocused: Bool
     @EnvironmentObject var authViewModel: AuthViewModel
     @Environment(\.presentationMode) var presentationMode
+    @EnvironmentObject var shoppingCart: ShoppingCart
     var body: some View {
         VStack {
             NavigationLink("", value: isAuthenticated)
@@ -63,8 +64,8 @@ struct LoginView: View {
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
-    }
-}
+//struct LoginView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LoginView()
+//    }
+//}
