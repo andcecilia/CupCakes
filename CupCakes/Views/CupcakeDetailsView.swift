@@ -23,11 +23,9 @@ struct CupcakeDetailsView: View {
             Spacer()
             Stepper("\(count)", value: $count, in: 1...cupcake.quantity)
 
-            Button(action: {shoppingCart.addProduct(cupcake: .init(name: cupcake.name,
-                                                                   price: cupcake.price,
-                                                                   quantity: cupcake.quantity,
-                                                                   image: cupcake.image,
-                                                                   description: cupcake.description), count: count)}){
+            Button(action: { shoppingCart.addProduct(cupcake: cupcake, 
+                                                     count: count) }
+            ){
                 RoundedButton(imageName: "cart.badge.plus", text: "Add to Cart")
             }
         }

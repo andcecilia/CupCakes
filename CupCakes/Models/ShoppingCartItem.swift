@@ -7,13 +7,6 @@
 
 import Foundation
 
-//struct ShoppingCartItem: Identifiable {
-//    var id: ObjectIdentifier
-//    var name: String
-//    var price: Int
-//    var quantity: Int
-//}
-
 struct ShoppingCartItem: Identifiable {
    var id: String
    var cupcake: Cupcake

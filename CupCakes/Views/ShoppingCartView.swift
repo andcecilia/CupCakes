@@ -31,8 +31,14 @@ struct ShoppingCartView: View {
             let totalAmount = shoppingCart.shoppingCartItems.reduce(0, { $0 + $1.cupcake.price * $1.count})
             Text("Total R$ \(totalAmount)")
             Spacer()
-            Button(action: {}){
-                RoundedButton(imageName: "cart", text: "Finalizar Compra")
+            Button(action: {
+                var shopItem: ShoppingCartItem
+                for (index, item) in shoppingCart.shoppingCartItems.enumerated() {
+                    shopItem = shoppingCart.shoppingCartItems[index]
+                    shoppingCart.updateCupcakes(cupcakes: shopItem)
+                }}){
+
+                RoundedButton(imageName: "cart.badge.plus", text: "Finalizar pedido")
             }
         }
     }
@@ -41,7 +47,3 @@ struct ShoppingCartView: View {
         self.shoppingCart.shoppingCartItems.remove(atOffsets: indexSet)
     }
 }
-
-//#Preview {
-//    ShoppingCartView()
-//}

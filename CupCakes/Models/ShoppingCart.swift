@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 class ShoppingCart: ObservableObject {
     @Published var shoppingCartItems: [ShoppingCartItem]
-    var subTotal = 0
+    
     init() {
         self.shoppingCartItems = []
     }
@@ -34,6 +35,23 @@ class ShoppingCart: ObservableObject {
            }
         }
     }
+    
+    func updateCupcakes(cupcakes: ShoppingCartItem) {
+        do {
+            let data: [String: Any] = [
+                "description": cupcakes.cupcake.description,
+                "image": cupcakes.cupcake.image,
+                "name": cupcakes.cupcake.name,
+                "price": cupcakes.cupcake.price,
+                "quantity": cupcakes.cupcake.quantity - cupcakes.count
+            ]
+            try Firestore.firestore().collection("cupcakes").document(cupcakes.cupcake.id).setData(data)
+        }
+        catch {
+            print(error)
+        }
+    }
+    
 }
 
 

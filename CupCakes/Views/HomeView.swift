@@ -18,15 +18,16 @@ struct HomeView: View {
         NavigationView {
             Form {
                 ForEach(cupcakes) { cupcake in
-                    VStack {
-                        NavigationLink {
-                            CupcakeDetailsView(cupcake: cupcake)
-                        } label: {
-                            Text(cupcake.name)
+                    if cupcake.quantity != 0 {
+                        VStack {
+                            NavigationLink {
+                                CupcakeDetailsView(cupcake: cupcake)
+                            } label: {
+                                Text(cupcake.name)
+                            }
                         }
                     }
                 }
-                
             }
             
         } .onAppear {
@@ -58,7 +59,10 @@ struct HomeView: View {
                     return nil
                 }
                 
-                return Cupcake(name: name,
+                self.cupcakeQuantity = quantity
+                
+                return Cupcake(id: document.documentID,
+                               name: name,
                                price: price,
                                quantity: quantity,
                                image: image,
