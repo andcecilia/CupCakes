@@ -14,16 +14,13 @@ struct ShoppingCartView: View {
     @ViewBuilder var body: some View {
         List {
             ForEach(shoppingCart.shoppingCartItems) { shopCart in
-//            shoppingCart.shoppingCartItems.forEach { shopCart in
-//                let totalAmount = shoppingCart.shoppingCartItems.reduce(0, { $0 + $1.cupcake.price * $1.count})
-//                let _ = print(totalAmount)
-//                self.total = shoppingCart.shoppingCartItems.reduce(0, { $0 + $1.cupcake.price * $1.count})
                 HStack {
                     Text(shopCart.cupcake.name)
                     Spacer()
-                    Text("Qtde:\(shopCart.count)")
-                    Spacer()
-                    Text("R$\(shopCart.cupcake.price * shopCart.count),00")
+                    HStack {
+                        Text("Qtde:\(shopCart.count)")
+                        Text("R$\(shopCart.cupcake.price * shopCart.count),00")
+                    }
                 }
              } .onDelete(perform: self.deleteItem)
         } .toolbar() {

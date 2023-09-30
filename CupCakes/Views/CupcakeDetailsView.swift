@@ -8,29 +8,26 @@
 import SwiftUI
 
 struct CupcakeDetailsView: View {
-    var cupcakeImage: String
-    var cupcakeName: String
-    var description: String
-    var price: Int
-    var cupcakeQuantity: Int
+    var cupcake: Cupcake
     @State private var count: Int = 1
     @EnvironmentObject var shoppingCart: ShoppingCart
-    @State var cupcake: Cupcake
     
     var body: some View {
         VStack {
-            Image(cupcakeImage)
-            Text(cupcakeName)
-            Text("Descrição: \(description)")
+            Image(cupcake.image)
+            Text(cupcake.name)
+            Text("Descrição: \(cupcake.description)")
             Spacer()
-            Text("Preço por unidade: R$ \(price)")
+            Text("Preço por unidade: R$ \(cupcake.price)")
+            
             Spacer()
-            Stepper("\(count)", value: $count, in: 1...cupcakeQuantity)
-            Button(action: {shoppingCart.addProduct(cupcake: .init(name: cupcakeName,
-                                                                   price: price,
-                                                                   quantity: cupcakeQuantity,
-                                                                   image: cupcakeImage,
-                                                                   description: description), count: count)}){
+            Stepper("\(count)", value: $count, in: 1...cupcake.quantity)
+
+            Button(action: {shoppingCart.addProduct(cupcake: .init(name: cupcake.name,
+                                                                   price: cupcake.price,
+                                                                   quantity: cupcake.quantity,
+                                                                   image: cupcake.image,
+                                                                   description: cupcake.description), count: count)}){
                 RoundedButton(imageName: "cart.badge.plus", text: "Add to Cart")
             }
         }
