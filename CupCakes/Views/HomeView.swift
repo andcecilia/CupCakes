@@ -6,11 +6,11 @@
 //
 
 import SwiftUI
+import FirebaseAuth
 import FirebaseFirestore
 
 struct HomeView: View {
     @State private var cupcakes = [Cupcake]()
-    @State private var cupcakeQuantity = 0
     @State private var cupcakeItem: Cupcake?
     @EnvironmentObject var shoppingCart: ShoppingCart
     
@@ -40,7 +40,7 @@ struct HomeView: View {
         })
     }
     
-    func fetchProducts() {
+    private func fetchProducts() {
         Firestore.firestore().collection("cupcakes").getDocuments() { querySnapshot, error in
             if let error = error {
                 print(error.localizedDescription)
@@ -58,8 +58,6 @@ struct HomeView: View {
                 else {
                     return nil
                 }
-                
-                self.cupcakeQuantity = quantity
                 
                 return Cupcake(id: document.documentID,
                                name: name,

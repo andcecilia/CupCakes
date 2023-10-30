@@ -21,10 +21,10 @@ struct CupcakeDetailsView: View {
             Text("Preço por unidade: R$ \(cupcake.price)")
             
             Spacer()
-            Stepper("\(count)", value: $count, in: 1...cupcake.quantity)
+            Stepper("Quantidade: \(count)", value: $count, in: 1...cupcake.quantity)
 
             Button(action: { shoppingCart.addProduct(cupcake: cupcake, 
-                                                     count: count) }
+                                                     itemQuantity: count) }
             ){
                 RoundedButton(imageName: "cart.badge.plus", text: "Add to Cart")
             }

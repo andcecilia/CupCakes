@@ -3,4 +3,326 @@
    uuid = "0A6F41D6-9A4B-4446-A5E6-384B019A65F0"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3913941-A0A0-4A47-9870-3996E0127C8B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Views/ShoppingCartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "D3913941-A0A0-4A47-9870-3996E0127C8B - de0ce48604e489f6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in CupCakes.ShoppingCartView.body.getter : some"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Views/ShoppingCartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "100">
+               </Location>
+               <Location
+                  uuid = "D3913941-A0A0-4A47-9870-3996E0127C8B - de0ce48604e48819"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #3 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in CupCakes.ShoppingCartView.body.getter : some"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Views/ShoppingCartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "532">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CA2FC1B1-9AC8-4280-96FF-AA8F8857906D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Views/ShoppingCartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "CA2FC1B1-9AC8-4280-96FF-AA8F8857906D - de0ce48604e48911"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #4 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in CupCakes.ShoppingCartView.body.getter : some"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Views/ShoppingCartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1036">
+               </Location>
+               <Location
+                  uuid = "CA2FC1B1-9AC8-4280-96FF-AA8F8857906D - de0ce48604e48911"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in closure #3 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Spacer, &lt;&lt;opaque return type of SwiftUI.View.sheet&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.View&gt;(isPresented: SwiftUI.Binding&lt;Swift.Bool&gt;, onDismiss: Swift.Optional&lt;() -&gt; ()&gt;, content: () -&gt; &#x3c4;_1_0) -&gt; some&gt;&gt;.0)&gt; in CupCakes.ShoppingCartView.body.getter : some"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Views/ShoppingCartView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "1156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FA5D2D29-38E6-4A4D-B714-01823FCC3300"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Models/ShoppingCart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "getUserShoppingCart()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FA5D2D29-38E6-4A4D-B714-01823FCC3300 - fd1f2aeacb488560"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;CupCakes.User&gt; in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CupCakes.ShoppingCart.getUserShoppingCart() -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "1080">
+               </Location>
+               <Location
+                  uuid = "FA5D2D29-38E6-4A4D-B714-01823FCC3300 - fd1f2aeacb488501"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;CupCakes.User&gt; in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CupCakes.ShoppingCart.getUserShoppingCart() -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "1080">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "39F5013A-0031-4152-8398-1F547C77D947"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Models/ShoppingCart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "addProduct(cupcake:itemQuantity:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "39F5013A-0031-4152-8398-1F547C77D947 - df7ab81c1f3b4ac1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CupCakes.ShoppingCart.addProduct(cupcake: CupCakes.Cupcake, itemQuantity: Swift.Int) -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "412">
+               </Location>
+               <Location
+                  uuid = "39F5013A-0031-4152-8398-1F547C77D947 - df7ab81c1f3b4ac1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CupCakes.ShoppingCart.addProduct(cupcake: CupCakes.Cupcake, itemQuantity: Swift.Int) -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "28"
+                  endingLineNumber = "28"
+                  offsetFromSymbolStart = "524">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD963223-8537-4D9A-931A-CD81424C0BD7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Models/ShoppingCart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "addProduct(cupcake:itemQuantity:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD963223-8537-4D9A-931A-CD81424C0BD7 - df7ab81c1f3b540b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CupCakes.ShoppingCart.addProduct(cupcake: CupCakes.Cupcake, itemQuantity: Swift.Int) -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1352">
+               </Location>
+               <Location
+                  uuid = "FD963223-8537-4D9A-931A-CD81424C0BD7 - df7ab81c1f3b540b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CupCakes.ShoppingCart.addProduct(cupcake: CupCakes.Cupcake, itemQuantity: Swift.Int) -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "1508">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DAB08606-1D3C-4C31-86F4-ED6A08D9021E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Models/ShoppingCart.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "updateUserShoppingCart(shoppingCartItem:itemQuantity:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DAB08606-1D3C-4C31-86F4-ED6A08D9021E - e2e9788d1e7b5f20"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CupCakes.ShoppingCart.updateUserShoppingCart(shoppingCartItem: CupCakes.ShoppingCartItem, itemQuantity: Swift.Int) -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "66"
+                  endingLineNumber = "66"
+                  offsetFromSymbolStart = "392">
+               </Location>
+               <Location
+                  uuid = "DAB08606-1D3C-4C31-86F4-ED6A08D9021E - e2e9788d1e7b5f41"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CupCakes.ShoppingCart.updateUserShoppingCart(shoppingCartItem: CupCakes.ShoppingCartItem, itemQuantity: Swift.Int) -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "65"
+                  endingLineNumber = "65"
+                  offsetFromSymbolStart = "392">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A1A3732-94EA-4A97-98B2-605B4A9DD88D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Views/ShoppingCartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1D9CEF5B-8556-4265-A9CA-807774E3ACAA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CupCakes/Views/ShoppingCartView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

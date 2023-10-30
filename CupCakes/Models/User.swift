@@ -8,8 +8,13 @@
 import Foundation
 
 struct User: Identifiable {
-    var id: ObjectIdentifier
-    var email: String
-    var shoppingCart: [ShoppingCart]
-    var shippingAddress: [ShippingAddress]
+    var id: String
+    var itemQuantity: Int
+    var cupcakeName: String
+    
+    init(itemQuantity: Int, cupcakeName: String) {
+        self.id = UUID().uuidString
+        self.itemQuantity = itemQuantity
+        self.cupcakeName = cupcakeName
+    }
 }

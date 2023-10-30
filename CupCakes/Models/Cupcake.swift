@@ -8,13 +8,14 @@
 import Foundation
 import SwiftUI
 
+/// Informações que vem do Firebase
 class Cupcake: Identifiable {
-    var id: String
-    var name: String
-    var price: Int
-    var quantity: Int
-    var image: String
-    var description: String
+    var id: String // Imutável
+    var name: String // Imutável
+    var price: Int // Imutável
+    var quantity: Int // Mutável - Estoque
+    var image: String // Imutável
+    var description: String // Imutável
     
     init(id: String,
          name: String,

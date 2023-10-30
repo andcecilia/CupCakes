@@ -7,12 +7,14 @@
 
 import Foundation
 
+/// Carrinho
 struct ShoppingCartItem: Identifiable {
    var id: String
    var cupcake: Cupcake
-   var count: Int
-init(cupcake: Cupcake, count: Int) {
+   var itemQuantity: Int
+    
+init(cupcake: Cupcake, itemQuantity: Int) {
    self.id = UUID().uuidString
    self.cupcake = cupcake
-   self.count = count
+   self.itemQuantity = itemQuantity
 }}
