@@ -41,19 +41,22 @@ class ShoppingCart: ObservableObject {
     
     // atualiza os valores do cupcake no firebase
     func updateCupcakes(cupcakes: ShoppingCartItem) {
-        do {
-            let data: [String: Any] = [
-                "description": cupcakes.cupcake.description,
-                "image": cupcakes.cupcake.image,
-                "name": cupcakes.cupcake.name,
-                "price": cupcakes.cupcake.price,
-                "quantity": cupcakes.cupcake.quantity - cupcakes.itemQuantity // Firebase - Carrinho
-            ]
-            try Firestore.firestore().collection("cupcakes").document(cupcakes.cupcake.id).setData(data)
-        }
-        catch {
-            print(error)
-        }
+        
+        let data: [String: Any] = [
+            "description": cupcakes.cupcake.description,
+            "image": cupcakes.cupcake.image,
+            "name": cupcakes.cupcake.name,
+            "price": cupcakes.cupcake.price,
+            "quantity": cupcakes.cupcake.quantity - cupcakes.itemQuantity // Firebase - Carrinho
+        ]
+        
+        let userData: [String: Any] = [
+            "cupcakeName": cupcakes.cupcake.name,
+            "itemQuantity": cupcakes.itemQuantity
+        ]
+        
+        Firestore.firestore().collection("cupcakes").document(cupcakes.cupcake.id).setData(data)
+        Firestore.firestore().collection("User").document(Auth.auth().currentUser!.uid).collection("cupcakes").document(cupcakes.cupcake.id).setData(userData)
     }
     
     // atualiza os dados do usuário no Firebase
