@@ -16,6 +16,7 @@ struct ShoppingCartView: View {
     @State private var isToRemoveAll = false
     
     @ViewBuilder var body: some View {
+        // (Rectangle().fill(Gradient(colors: [.white, .orange])))
         List {
             ForEach(shoppingCart.shoppingCartItems) { shopCart in
                 HStack {
@@ -28,7 +29,9 @@ struct ShoppingCartView: View {
                     }
                 }
              } .onDelete(perform: self.deleteItem)
-        } .toolbar() {
+        } .scrollContentBackground(.hidden)
+            .background(Rectangle().fill(Gradient(colors: [.orange, .white]))).edgesIgnoringSafeArea(.all)
+            .toolbar() {
             EditButton()
         }
         

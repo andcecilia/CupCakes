@@ -14,8 +14,8 @@
             filePath = "CupCakes/Views/ShoppingCartView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -62,8 +62,8 @@
             filePath = "CupCakes/Views/ShoppingCartView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -145,6 +145,21 @@
                   endingLineNumber = "89"
                   offsetFromSymbolStart = "1080">
                </Location>
+               <Location
+                  uuid = "FA5D2D29-38E6-4A4D-B714-01823FCC3300 - fd1f2aeacb488a9e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.FIRQueryDocumentSnapshot) -&gt; Swift.Optional&lt;CupCakes.User&gt; in closure #1 (Swift.Optional&lt;__C.FIRQuerySnapshot&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CupCakes.ShoppingCart.getUserShoppingCart() -&gt; ()"
+                  moduleName = "CupCakes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1080">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -199,102 +214,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "FD963223-8537-4D9A-931A-CD81424C0BD7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CupCakes/Models/ShoppingCart.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "addProduct(cupcake:itemQuantity:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "FD963223-8537-4D9A-931A-CD81424C0BD7 - df7ab81c1f3b540b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CupCakes.ShoppingCart.addProduct(cupcake: CupCakes.Cupcake, itemQuantity: Swift.Int) -&gt; ()"
-                  moduleName = "CupCakes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "1352">
-               </Location>
-               <Location
-                  uuid = "FD963223-8537-4D9A-931A-CD81424C0BD7 - df7ab81c1f3b540b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CupCakes.ShoppingCart.addProduct(cupcake: CupCakes.Cupcake, itemQuantity: Swift.Int) -&gt; ()"
-                  moduleName = "CupCakes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "38"
-                  endingLineNumber = "38"
-                  offsetFromSymbolStart = "1508">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DAB08606-1D3C-4C31-86F4-ED6A08D9021E"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "CupCakes/Models/ShoppingCart.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "updateUserShoppingCart(shoppingCartItem:itemQuantity:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "DAB08606-1D3C-4C31-86F4-ED6A08D9021E - e2e9788d1e7b5f20"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CupCakes.ShoppingCart.updateUserShoppingCart(shoppingCartItem: CupCakes.ShoppingCartItem, itemQuantity: Swift.Int) -&gt; ()"
-                  moduleName = "CupCakes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "66"
-                  endingLineNumber = "66"
-                  offsetFromSymbolStart = "392">
-               </Location>
-               <Location
-                  uuid = "DAB08606-1D3C-4C31-86F4-ED6A08D9021E - e2e9788d1e7b5f41"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CupCakes.ShoppingCart.updateUserShoppingCart(shoppingCartItem: CupCakes.ShoppingCartItem, itemQuantity: Swift.Int) -&gt; ()"
-                  moduleName = "CupCakes"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/cecilia/Local%20Documents/Projects/CupCakes/CupCakes/Models/ShoppingCart.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "65"
-                  endingLineNumber = "65"
-                  offsetFromSymbolStart = "392">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4A1A3732-94EA-4A97-98B2-605B4A9DD88D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -302,8 +221,8 @@
             filePath = "CupCakes/Views/ShoppingCartView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -318,8 +237,8 @@
             filePath = "CupCakes/Views/ShoppingCartView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>

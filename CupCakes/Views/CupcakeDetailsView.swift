@@ -13,22 +13,26 @@ struct CupcakeDetailsView: View {
     @EnvironmentObject var shoppingCart: ShoppingCart
     
     var body: some View {
+        
         VStack {
+            Rectangle()
+                .fill(Gradient(colors: [.orange, .white]))
+                .frame(width: 400, height: 100, alignment: .topLeading)
+                .edgesIgnoringSafeArea(.all)
             Image(cupcake.image)
-            Text(cupcake.name)
-            Text("Descrição: \(cupcake.description)")
+            Text(cupcake.name).foregroundStyle(.orange).bold().font(.largeTitle)
             Spacer()
+            Text("Descrição: \(cupcake.description)").font(.body)
             Text("Preço por unidade: R$ \(cupcake.price)")
-            
             Spacer()
             Stepper("Quantidade: \(count)", value: $count, in: 1...cupcake.quantity)
-
-            Button(action: { shoppingCart.addProduct(cupcake: cupcake, 
+            Spacer()
+            Button(action: { shoppingCart.addProduct(cupcake: cupcake,
                                                      itemQuantity: count) }
             ){
                 RoundedButton(imageName: "cart.badge.plus", text: "Add to Cart")
             }
-        }
+        }.scrollContentBackground(.hidden)
     }
 }
 

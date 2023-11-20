@@ -15,29 +15,29 @@ struct HomeView: View {
     @EnvironmentObject var shoppingCart: ShoppingCart
     
     var body: some View {
-        NavigationView {
-            Form {
-                ForEach(cupcakes) { cupcake in
-                    if cupcake.quantity != 0 {
-                        VStack {
-                            NavigationLink {
-                                CupcakeDetailsView(cupcake: cupcake)
-                            } label: {
-                                Text(cupcake.name)
+        ZStack {
+            NavigationView {
+                Form {
+                    ForEach(cupcakes) { cupcake in
+                        if cupcake.quantity != 0 {
+                            VStack {
+                                NavigationLink {
+                                    CupcakeDetailsView(cupcake: cupcake)
+                                } label: {
+                                    Text(cupcake.name)
+                                }
                             }
                         }
                     }
-                }
+                }.scrollContentBackground(.hidden)
+                    .onAppear {
+                        fetchProducts()
+                    } 
+                    .navigationBarTitle("Cupcakes").background(Rectangle().fill(Gradient(colors: [.white, .orange])))
+                    .navigationBarItems(trailing: NavigationLink(destination: ShoppingCartView()) { Image(systemName: "cart")
+                    })
             }
-            
-        } .onAppear {
-            fetchProducts()
         }
-        .navigationBarTitle("Cupcakes")
-        .navigationBarItems(trailing:
-                                NavigationLink(destination: ShoppingCartView()) {
-            Image(systemName: "cart")
-        })
     }
     
     private func fetchProducts() {

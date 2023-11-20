@@ -43,4 +43,3 @@ public extension Text {
             .font(.headline)
     }
 }
-

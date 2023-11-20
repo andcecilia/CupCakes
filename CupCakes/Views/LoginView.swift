@@ -13,6 +13,7 @@ struct LoginView: View {
     @State private var showAuthLoader: Bool = false
     @State private var showInvalidPWAlert: Bool = false
     @State private var isAuthenticated: Bool = false
+    @State var presentingModal = false
     @FocusState private var emailIsFocused: Bool
     @FocusState private var passwordIsFocused: Bool
     @EnvironmentObject var authViewModel: AuthViewModel
@@ -46,6 +47,14 @@ struct LoginView: View {
                                 showInvalidPWAlert: $showInvalidPWAlert,
                                 isAuthenticated: $isAuthenticated,
                                 buttonText: "Create Account")
+                //Forget Password
+
+                Button(action: { 
+                    self.presentingModal = true
+                }, label: { Text("Esqueceu a senha?")})
+                .sheet(isPresented: $presentingModal) {
+                    ResetPasswordView()
+                }
             } else {
                 ProgressView()
             }

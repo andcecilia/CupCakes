@@ -31,6 +31,7 @@
 		2EA4E4B82AB2956000E0ED38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B72AB2956000E0ED38 /* ContentView.swift */; };
 		2EA4E4BA2AB2956100E0ED38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA4E4B92AB2956100E0ED38 /* Assets.xcassets */; };
 		2EA4E4BD2AB2956100E0ED38 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EA4E4BC2AB2956100E0ED38 /* Preview Assets.xcassets */; };
+		2EA620B72B0A666800D382D4 /* ResetPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA620B62B0A666800D382D4 /* ResetPasswordView.swift */; };
 		2EC222E12AE47105001F46B7 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EC222E02AE47105001F46B7 /* CheckoutView.swift */; };
 		2EEDA72B2ABF64FE005BD2D5 /* CupcakeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDA72A2ABF64FE005BD2D5 /* CupcakeDetailsView.swift */; };
 		2EEDA72D2ABF718C005BD2D5 /* ShoppingCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EEDA72C2ABF718C005BD2D5 /* ShoppingCartView.swift */; };
@@ -53,6 +54,7 @@
 		2EA4E4B72AB2956000E0ED38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2EA4E4B92AB2956100E0ED38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2EA4E4BC2AB2956100E0ED38 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2EA620B62B0A666800D382D4 /* ResetPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordView.swift; sourceTree = "<group>"; };
 		2EC222E02AE47105001F46B7 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		2EEDA72A2ABF64FE005BD2D5 /* CupcakeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CupcakeDetailsView.swift; sourceTree = "<group>"; };
 		2EEDA72C2ABF718C005BD2D5 /* ShoppingCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingCartView.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				2EEDA72A2ABF64FE005BD2D5 /* CupcakeDetailsView.swift */,
 				2EEDA72C2ABF718C005BD2D5 /* ShoppingCartView.swift */,
 				2EC222E02AE47105001F46B7 /* CheckoutView.swift */,
+				2EA620B62B0A666800D382D4 /* ResetPasswordView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				2E0711CF2AB7933F00EC0EA9 /* ShippingAddress.swift in Sources */,
 				2EA4E4B82AB2956000E0ED38 /* ContentView.swift in Sources */,
 				2EC222E12AE47105001F46B7 /* CheckoutView.swift in Sources */,
+				2EA620B72B0A666800D382D4 /* ResetPasswordView.swift in Sources */,
 				2E0711C52AB7375100EC0EA9 /* Cupcake.swift in Sources */,
 				2E0711C32AB29F9C00EC0EA9 /* HomeView.swift in Sources */,
 				2EEDA72D2ABF718C005BD2D5 /* ShoppingCartView.swift in Sources */,
